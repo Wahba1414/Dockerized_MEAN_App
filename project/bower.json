@@ -1,0 +1,24 @@
+{
+  "name": "mean_project_template",
+  "authors": [
+    "Mohammed Wahba"
+  ],
+  "description": "Template for any MEAN project",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "angular": "^1.7.5",
+    "bootstrap": "^4.1.3",
+    "angular-ui-router": "^1.0.20",
+    "angular-ui-notification": "^0.3.6"
+  }
+}

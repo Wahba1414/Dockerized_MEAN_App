@@ -1,0 +1,60 @@
+<!doctype html>
+<html ng-app="templateApp">
+    <head>
+        <!-- To set the base for all relative url : the project directory -->
+        <!-- <base href="/" /> -->
+        <!-- <base href="/home/zizo/web/github_projects/MEAN_project_template/" /> -->
+        <meta charset="utf-8">
+        <title> MEAN project template </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- including App scripts -->
+
+        <!-- JQuery -->
+        <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+
+        <!-- Angular -->
+        <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+        <script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+
+        <script src="bower_components/angular-ui-notification/dist/angular-ui-notification.min.js"></script>
+        <link rel="stylesheet" href="bower_components/angular-ui-notification/dist/angular-ui-notification.min.css">
+
+
+        <!-- bootstrap -->
+        <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>    
+        <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.5.0.js"></script>
+
+
+        <!-- custom styles -->
+        <link href="styles/modal.css" rel="stylesheet">
+
+        <!-- App scripts -->
+        <script type="text/javascript" src="configs/app_setup.js"></script>
+
+
+        <!-- Routes -->
+        <script type="text/javascript" src="configs/routes/landing_page_routes.js"></script>
+
+        <!-- controllers -->
+        <script type="text/javascript" src="controllers/home/homeCtrl.js"></script>
+
+        <script type="text/javascript" src="controllers/admin/adminCtrl.js"></script>
+        <script type="text/javascript" src="controllers/admin/add_project_modal_Ctrl.js"></script>
+
+        <!-- services -->
+        <script type="text/javascript" src="services/modal_service.js"></script>
+
+
+
+    </head>
+    
+    <body>
+        <!-- here UI router will puts its templates -->
+        <ui-view></ui-view>
+
+    </body>
+
+</html>
