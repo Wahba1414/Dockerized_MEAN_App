@@ -1,0 +1,28 @@
+version: '3'
+
+services:
+  webapp:
+    build:
+      context: .
+      dockerfile: webapp.Dockerfile
+
+    image: webapp
+
+    depends_on:
+     - mongodatabase
+    
+    ports:
+      - "8080:8080"
+
+
+  mongodatabase:
+    image: mongo
+    restart: always
+    ports:
+      - "27017:27017"
+
+    volumes:
+      - /etc/mongodatabase:/data/db
+   
+  
+  
